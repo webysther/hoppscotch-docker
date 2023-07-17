@@ -411,5 +411,6 @@ If you want to make local modifications to these images for development purposes
 ```bash
 git clone https://github.com/webysther/hoppscotch-docker.git
 cd hoppscotch-docker
-docker build -t webysther/hoppscotch:latest .
+docker build --build-arg HOPPSCOTH_RELEASE="2023.4.7" . -t webysther/hoppscotch:2023.4.7 -t webysther/hoppscotch:latest
+docker push webysther/hoppscotch --all-tags
 ```
