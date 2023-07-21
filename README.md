@@ -57,6 +57,7 @@ Provided by the PRs [#3107](https://github.com/hoppscotch/hoppscotch/pull/3107) 
 | `-e POSTGRES_PORT=` | Default is 5432|
 | `-e POSTGRES_DB=` | Default is hoppscotch|
 | `-e POSTGRES_USER=` | Default is postgres|
+| `-e POSTGRES_PASSWORD=` | postgres password|
 
 Provided by [hoppscotch](https://docs.hoppscotch.io/documentation/self-host/install-and-build/#configuring-the-environment):
 
@@ -144,6 +145,9 @@ services:
       - /path/to/hoppscotch/config:/config
     ports:
       - 80:80
+    depends_on:
+      hoppscotch-db:
+        condition: service_healthy
     restart: unless-stopped
 
   hoppscotch-db:
@@ -159,6 +163,14 @@ services:
       - /path/to/postgres/data:/var/lib/postgresql/data
     expose:
       - 5432
+    healthcheck:
+      test: [
+        "CMD-SHELL", 
+        "sh -c 'pg_isready -U ${POSTGRES_USER} -d ${POSTGRES_DB}'"
+      ]
+      interval: 10s
+      timeout: 5s
+      retries: 5
     restart: unless-stopped
 
 networks:
