@@ -1,0 +1,16 @@
+name: docker-readme
+
+on:
+  push:
+    paths:
+      - 'README.md'
+
+jobs:
+  build:
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: peter-evans/dockerhub-description@v3
+        with:
+          username: ${{ secrets.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_TOKEN }}
+          repository: webysther/hoppscotch
