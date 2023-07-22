@@ -4,7 +4,7 @@
 
 ## Simple Tags
 
-- [`latest`](https://github.com/hoppscotch/hoppscotch/releases/tag/2023.4.8)
+- [`latest`,`4`,`2023.4.8`](https://github.com/hoppscotch/hoppscotch/releases/tag/2023.4.8)
 - [`2023.4.7`](https://github.com/hoppscotch/hoppscotch/releases/tag/2023.4.7)
 - [`2023.4.6`](https://github.com/hoppscotch/hoppscotch/releases/tag/2023.4.6)
 - [`2023.4.5`](https://github.com/hoppscotch/hoppscotch/releases/tag/2023.4.5)
