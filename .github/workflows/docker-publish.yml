@@ -5,8 +5,7 @@ on:
     types: [publish_tag]
 
 env:
-  REGISTRY: ghcr.io
-  IMAGE_NAME: ${{ github.repository }}
+  IMAGE_NAME: webysther/hoppscotch
   HOPPSCOTH_RELEASE: ${{ github.event.client_payload.tag_name }}
   HOPPSCOTH_MAJOR: ${{ github.event.client_payload.tag_major }}
 
