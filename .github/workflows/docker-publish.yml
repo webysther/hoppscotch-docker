@@ -31,3 +31,8 @@ jobs:
             ${{ env.IMAGE_NAME }}:${{ env.HOPPSCOTH_RELEASE }}
             ${{ env.IMAGE_NAME }}:${{ env.HOPPSCOTH_MAJOR }}
             ${{ env.IMAGE_NAME }}:latest
+      - uses: peter-evans/dockerhub-description@v3
+        with:
+          username: ${{ secrets.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_TOKEN }}
+          repository: ${{ env.IMAGE_NAME }}
