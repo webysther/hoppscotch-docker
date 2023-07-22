@@ -7,7 +7,7 @@ on:
 env:
   REGISTRY: ghcr.io
   IMAGE_NAME: ${{ github.repository }}
-  HOPPSCOTH_RELEASE: ${{ github.event.client_payload.release }}
+  HOPPSCOTH_RELEASE: ${{ github.event.client_payload.tag_name }}
 
 jobs:
   build:
