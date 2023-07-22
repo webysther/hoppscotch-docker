@@ -1,4 +1,16 @@
-# hoppscotch docker
+# Supported tags and respective `Dockerfile` links
+
+[`Dockerfile`](https://github.com/webysther/hoppscotch-docker)
+
+## Simple Tags
+
+- [`latest`,`4`,`2023.4.8`](https://github.com/hoppscotch/hoppscotch/releases/tag/2023.4.8)
+- [`2023.4.7`](https://github.com/hoppscotch/hoppscotch/releases/tag/2023.4.7)
+- [`2023.4.6`](https://github.com/hoppscotch/hoppscotch/releases/tag/2023.4.6)
+- [`2023.4.5`](https://github.com/hoppscotch/hoppscotch/releases/tag/2023.4.5)
+- [`2023.4.4`](https://github.com/hoppscotch/hoppscotch/releases/tag/2023.4.4)
+
+# hoppscotch
 
 Hoppscotch image is based on PRs: [#3107](https://github.com/hoppscotch/hoppscotch/pull/3107) [#3112](https://github.com/hoppscotch/hoppscotch/pull/3112).
 
