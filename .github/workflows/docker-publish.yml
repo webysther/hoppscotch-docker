@@ -27,6 +27,8 @@ jobs:
       - uses: docker/build-push-action@v2
         with:
           push: true
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
           build-args: |
             HOPPSCOTH_RELEASE=${{ env.HOPPSCOTH_RELEASE }}
           tags: |
