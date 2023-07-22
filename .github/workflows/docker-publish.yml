@@ -1,4 +1,4 @@
-name: hub
+name: docker-publish
 
 on:
   repository_dispatch:
