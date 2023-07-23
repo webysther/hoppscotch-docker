@@ -1,4 +1,4 @@
-name: docker-publish
+name: Publish Docker Image
 
 on:
   repository_dispatch:
