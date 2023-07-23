@@ -41,7 +41,7 @@ This image provides various versions that are available via tags. Please read th
 
 The application accepts a series of environment variables to further customize itself on boot.
 
-Provided by this repository:
+Provided by this [repository](https://github.com/webysther/hoppscotch-docker):
 
 | Parameter | Function |
 | :---: | --- |
