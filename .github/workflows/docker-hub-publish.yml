@@ -1,4 +1,4 @@
-name: Publish Docker Image
+name: Publish Docker Hub Image
 
 on:
   repository_dispatch:
