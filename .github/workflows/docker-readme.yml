@@ -1,4 +1,4 @@
-name: docker-readme
+name: Update Docker Hub Description
 
 on:
   push:
