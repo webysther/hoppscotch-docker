@@ -1,6 +1,6 @@
 # Quick reference
 
--	**Maintained by**: [Webysther](https://github.com/webysther/hoppscotch-docker)
+-	**Maintained by**: [Webysther](https://github.com/webysther)
 
 -	**Where to get help**: [Discord](https://hoppscotch.io/discord)
 # Supported tags and respective `Dockerfile` links
