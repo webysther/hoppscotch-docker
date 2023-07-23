@@ -12,7 +12,7 @@
 
 # hoppscotch
 
-Hoppscotch image is based on PRs: [#3107](https://github.com/hoppscotch/hoppscotch/pull/3107) [#3112](https://github.com/hoppscotch/hoppscotch/pull/3112).
+Hoppscotch image is based on PR's [#3107](https://github.com/hoppscotch/hoppscotch/pull/3107) and [#3112](https://github.com/hoppscotch/hoppscotch/pull/3112).
 
 Based on LSIO Images featuring:
 
