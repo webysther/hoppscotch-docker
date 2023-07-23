@@ -1,6 +1,12 @@
+# Quick reference
+
+-	**Maintained by**: [Webysther](https://github.com/webysther/hoppscotch-docker)
+
+-	**Where to get help**: [Discord](https://hoppscotch.io/discord)
 # Supported tags and respective `Dockerfile` links
 
-[`Dockerfile`](https://github.com/webysther/hoppscotch-docker/blob/main/Dockerfile)
+- [`Dockerfile`](https://github.com/webysther/hoppscotch-docker/blob/main/Dockerfile)
+- Available on GitHub as [`ghcr.io/webysther/hoppscotch-docker`](https://github.com/webysther/hoppscotch-docker/packages)
 
 ## Simple Tags
 
@@ -12,7 +18,7 @@
 
 # hoppscotch
 
-Hoppscotch image is based on PR's [#3107](https://github.com/hoppscotch/hoppscotch/pull/3107) and [#3112](https://github.com/hoppscotch/hoppscotch/pull/3112).
+Hoppscotch image is based on PRs: [#3107](https://github.com/hoppscotch/hoppscotch/pull/3107) [#3112](https://github.com/hoppscotch/hoppscotch/pull/3112).
 
 Based on LSIO Images featuring:
 
@@ -41,7 +47,7 @@ This image provides various versions that are available via tags. Please read th
 
 The application accepts a series of environment variables to further customize itself on boot.
 
-Provided by this [repository](https://github.com/webysther/hoppscotch-docker):
+Provided by this repository:
 
 | Parameter | Function |
 | :---: | --- |
