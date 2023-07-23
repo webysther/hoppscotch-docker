@@ -37,7 +37,7 @@ This image provides various versions that are available via tags. Please read th
 
 The application accepts a series of environment variables to further customize itself on boot.
 
-Provided by the PRs [#3107](https://github.com/hoppscotch/hoppscotch/pull/3107) and [#3112](https://github.com/hoppscotch/hoppscotch/pull/3112):
+Provided by this repository:
 
 | Parameter | Function |
 | :---: | --- |
