@@ -1,6 +1,6 @@
 # Supported tags and respective `Dockerfile` links
 
-[`Dockerfile`](https://github.com/webysther/hoppscotch-docker)
+[`Dockerfile`](https://github.com/webysther/hoppscotch-docker/blob/main/Dockerfile)
 
 ## Simple Tags
 
