@@ -30,6 +30,6 @@ jobs:
           build-args: |
             HOPPSCOTH_RELEASE=${{ env.HOPPSCOTH_RELEASE }}
           tags: |
-            ${{ env.IMAGE_NAME }}:${{ env.HOPPSCOTH_RELEASE }}
-            ${{ env.IMAGE_NAME }}:${{ env.HOPPSCOTH_MAJOR }}
-            ${{ env.IMAGE_NAME }}:latest
+            ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:${{ env.HOPPSCOTH_RELEASE }}
+            ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:${{ env.HOPPSCOTH_MAJOR }}
+            ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:latest
