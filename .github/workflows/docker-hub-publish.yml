@@ -31,3 +31,6 @@ jobs:
             ${{ env.IMAGE_NAME }}:${{ env.HOPPSCOTH_RELEASE }}
             ${{ env.IMAGE_NAME }}:${{ env.HOPPSCOTH_MAJOR }}
             ${{ env.IMAGE_NAME }}:latest
+          platforms: |
+            linux/amd64
+            linux/arm64
