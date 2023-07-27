@@ -33,3 +33,6 @@ jobs:
             ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:${{ env.HOPPSCOTH_RELEASE }}
             ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:${{ env.HOPPSCOTH_MAJOR }}
             ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:latest
+          platforms: |
+            linux/amd64
+            linux/arm64
