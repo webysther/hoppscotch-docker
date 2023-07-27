@@ -1,6 +1,6 @@
 # syntax=docker/dockerfile:1
 
-FROM --platform=$BUILDPLATFORM lsiobase/ubuntu:jammy
+FROM --platform=$TARGETPLATFORM lsiobase/ubuntu:jammy
 ARG TARGETPLATFORM
 ARG BUILDPLATFORM
 
