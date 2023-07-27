@@ -27,6 +27,7 @@ jobs:
           context: .
           push: true
           provenance: false
+          sbom: true
           cache-from: type=gha
           cache-to: type=gha,mode=max
           build-args: |
