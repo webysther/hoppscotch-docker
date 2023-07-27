@@ -47,7 +47,7 @@ jobs:
         name: Login to GitHub Container Registry
         uses: docker/login-action@v2
         with:
-          registry: ${{ env.REGISTRY }}
+          registry: ghcr.io
           username: ${{ github.actor }}
           password:  ${{ secrets.GITHUB_TOKEN }}
       - 
@@ -61,7 +61,7 @@ jobs:
           cache-from: type=gha
           cache-to: type=gha,mode=max
           build-args: |
-            HOPPSCOTH_RELEASE=${{ env.HOPPSCOTH_RELEASE }}
+            HOPPSCOTH_RELEASE=${{ github.event.client_payload.tag_name }}
           tags: ${{ steps.meta.outputs.tags }}
           platforms: |
             linux/amd64
