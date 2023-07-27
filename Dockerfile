@@ -1,6 +1,8 @@
 # syntax=docker/dockerfile:1
 
-FROM lsiobase/ubuntu:jammy
+FROM --platform=$BUILDPLATFORM lsiobase/ubuntu:jammy
+ARG TARGETPLATFORM
+ARG BUILDPLATFORM
 
 ARG HOPPSCOTH_RELEASE
 ARG HOPPSCOTH_REPO="hoppscotch/hoppscotch"
