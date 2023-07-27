@@ -17,10 +17,15 @@ jobs:
       - uses: actions/checkout@v3
       - uses: docker/metadata-action@v4
         with:
-          images: hoppscotch/hoppscotch
           labels: |
             maintainer=Webysther
+            org.opencontainers.image.authors=linuxserver.io,github.com/hoppscotch/hoppscotch,github.com/webysther/hoppscotch-docker
+            org.opencontainers.image.licenses=GPL-3.0-only,MIT
+            org.opencontainers.image.title=Hoppscotch docker
             org.opencontainers.image.description=All-in-one hoppscotch image that works with one domain and have embed smtp
+            org.opencontainers.image.version=${{ env.HOPPSCOTH_RELEASE }}
+            org.opencontainers.image.documentation=https://github.com/webysther/hoppscotch-docker#application-setup
+            org.opencontainers.image.vendor=Hoppscotch
       - uses: docker/setup-qemu-action@v2
       - uses: docker/setup-buildx-action@v2
       - uses: docker/login-action@v2
