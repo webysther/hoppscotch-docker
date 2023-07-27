@@ -18,7 +18,7 @@ jobs:
         with:
           images: |
             webysther/hoppscotch
-            ghcr.io/webysther/hoppscotch-docker
+            ghcr.io/webysther/hoppscotch
           tags: |
             type=raw,value=${{ github.event.client_payload.tag_name }}
             type=raw,value=${{ github.event.client_payload.tag_major }}
