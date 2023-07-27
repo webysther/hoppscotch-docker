@@ -4,12 +4,6 @@ on:
   repository_dispatch:
     types: [publish_tag]
 
-env:
-  REGISTRY: ghcr.io
-  IMAGE_NAME: webysther/hoppscotch-docker
-  HOPPSCOTH_RELEASE: ${{ github.event.client_payload.tag_name }}
-  HOPPSCOTH_MAJOR: ${{ github.event.client_payload.tag_major }}
-
 jobs:
   build:
     runs-on: ubuntu-22.04
@@ -22,14 +16,19 @@ jobs:
         id: meta
         uses: docker/metadata-action@v4
         with:
-          images: hoppscotch/hoppscotch
+          images: |
+            webysther/hoppscotch
+            ghcr.io/webysther/hoppscotch-docker
+          tags: |
+            type=raw,value=${{ github.event.client_payload.tag_name }}
+            type=raw,value=${{ github.event.client_payload.tag_major }}
           labels: |
             maintainer=Webysther
             org.opencontainers.image.authors=linuxserver.io,github.com/hoppscotch/hoppscotch,github.com/webysther/hoppscotch-docker
             org.opencontainers.image.licenses=GPL-3.0-only,MIT
             org.opencontainers.image.title=Hoppscotch docker
             org.opencontainers.image.description=All-in-one hoppscotch image that works with one domain and have embed smtp
-            org.opencontainers.image.version=${{ env.HOPPSCOTH_RELEASE }}
+            org.opencontainers.image.version=${{ github.event.client_payload.tag_name }}
             org.opencontainers.image.documentation=https://github.com/webysther/hoppscotch-docker#application-setup
             org.opencontainers.image.vendor=Hoppscotch
       - 
@@ -63,10 +62,7 @@ jobs:
           cache-to: type=gha,mode=max
           build-args: |
             HOPPSCOTH_RELEASE=${{ env.HOPPSCOTH_RELEASE }}
-          tags: |
-            ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:${{ env.HOPPSCOTH_RELEASE }}
-            ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:${{ env.HOPPSCOTH_MAJOR }}
-            ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:latest
+          tags: ${{ steps.meta.outputs.tags }}
           platforms: |
             linux/amd64
             linux/arm64
