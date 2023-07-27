@@ -1,4 +1,4 @@
-name: Publish Docker GitHub Image
+name: Publish Container Image
 
 on:
   repository_dispatch:
