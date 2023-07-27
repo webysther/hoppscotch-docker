@@ -22,6 +22,7 @@ jobs:
           tags: |
             type=raw,value=${{ github.event.client_payload.tag_name }}
             type=raw,value=${{ github.event.client_payload.tag_major }}
+            type=raw,value=latest
           labels: |
             maintainer=Webysther
             org.opencontainers.image.authors=linuxserver.io,github.com/hoppscotch/hoppscotch,github.com/webysther/hoppscotch-docker
@@ -56,7 +57,7 @@ jobs:
         with:
           context: .
           push: true
-          provenance: true
+          provenance: false
           sbom: true
           cache-from: type=gha
           cache-to: type=gha,mode=max
