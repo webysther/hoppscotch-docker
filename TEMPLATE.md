@@ -6,7 +6,7 @@
 # Supported tags and respective `Dockerfile` links
 
 - [`Dockerfile`](https://github.com/webysther/hoppscotch-docker/blob/main/Dockerfile)
-- Available on GitHub as [`ghcr.io/webysther/hoppscotch-docker`](https://github.com/webysther/hoppscotch-docker/pkgs/container/hoppscotch-docker)
+- Available on GitHub as [`ghcr.io/webysther/hoppscotch`](https://github.com/webysther/hoppscotch-docker/pkgs/container/hoppscotch)
 
 ## Simple Tags
 
