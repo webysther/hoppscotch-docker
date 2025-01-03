@@ -3,6 +3,11 @@
 -	**Maintained by**: [Webysther](https://github.com/webysther)
 
 -	**Where to get help**: [Discord](https://hoppscotch.io/discord)
+
+# Deprecated
+
+After hoppscotch created the AIO container and provide a base image now all features on this image can be used in the [official one](https://docs.hoppscotch.io/documentation/self-host/community-edition/install-and-build#docker) which is the same ideia.
+
 # Supported tags and respective `Dockerfile` links
 
 - [`Dockerfile`](https://github.com/webysther/hoppscotch-docker/blob/main/Dockerfile)
